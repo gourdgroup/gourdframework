@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>gourd-common</module>
+        <module>gourd-manager-api</module>
+        <module>gourd-manager</module>
     </modules>
 
     <properties>
