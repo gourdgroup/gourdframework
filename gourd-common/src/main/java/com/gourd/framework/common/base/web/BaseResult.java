@@ -16,8 +16,8 @@ import lombok.Data;
 @Data
 public class BaseResult<T> {
 
-    @ApiModelProperty(value = "返回信息编码，200为正常返回，其余编码见错误编码表")
-    private String code;
+    @ApiModelProperty(value = "返回信息编码，200为正常返回，其余编码见ResultCodeEnum")
+    private String resultCode;
 
     @ApiModelProperty(value = "返回信息描述")
     private String message;
