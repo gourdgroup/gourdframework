@@ -10,31 +10,11 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 /**
- * <p>
- * Title:
- * </p>
- *
- * <p>
- * Copyright: Copyright (c) 2018
- * </p>
- *
- * <p>
+ * Title:实体基础类
  * Company:互撸娃大战铁茎肛.avi
- * </p>
  *
- * @author:<a href="mailto:8574157@qq.com">zengmx</a>
- *
- * @version 1.0
- *
- * @createtime 2018/5/2  14:13
- *
- * @修改历史
- *
- * <li>版本号 修改日期 修改人 修改说明
- *
- * <li>
- *
- * <li>
+ * @author <a href="mailto:8574157@qq.com">zengmx</a>
+ * @date 2018/5/3  11:12
  */
 @MappedSuperclass
 @Data
