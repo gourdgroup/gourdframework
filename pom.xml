@@ -61,6 +61,10 @@
 
         <shiro.version>1.4.0</shiro.version>
         <shiro.redis.version>2.4.2.1-RELEASE</shiro.redis.version>
+
+
+        <!-- lomlok -->
+        <lombak.version>1.16.10</lombak.version>
     </properties>
 
 
@@ -372,6 +376,13 @@
             </dependency>
             <!-- shiro spring end -->
 
+            <!-- lombok start -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombak.version}</version>
+            </dependency>
+            <!-- lombok end -->
 
         </dependencies>
     </dependencyManagement>

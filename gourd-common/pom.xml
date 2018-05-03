@@ -183,6 +183,13 @@
         </dependency>
         <!-- shiro end -->
 
+        <!-- lombok start -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- lombok end -->
+
     </dependencies>
 
 

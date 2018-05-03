@@ -1,5 +1,6 @@
 package com.gourd.framework.common.base.bean;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.data.annotation.Id;
 
@@ -36,6 +37,7 @@ import java.io.Serializable;
  * <li>
  */
 @MappedSuperclass
+@Data
 public abstract class BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 933507917255518479L;
@@ -69,68 +71,4 @@ public abstract class BaseEntity implements Serializable {
 
     @ApiModelProperty(value = "最后更新人员姓名", position = -99)
     protected String lastUpdateUserName;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(String createTime) {
-        this.createTime = createTime;
-    }
-
-    public String getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(String updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public String getCreateUserId() {
-        return createUserId;
-    }
-
-    public void setCreateUserId(String createUserId) {
-        this.createUserId = createUserId;
-    }
-
-    public String getCreateUserName() {
-        return createUserName;
-    }
-
-    public void setCreateUserName(String createUserName) {
-        this.createUserName = createUserName;
-    }
-
-    public String getLastUpdateUserId() {
-        return lastUpdateUserId;
-    }
-
-    public void setLastUpdateUserId(String lastUpdateUserId) {
-        this.lastUpdateUserId = lastUpdateUserId;
-    }
-
-    public String getLastUpdateUserName() {
-        return lastUpdateUserName;
-    }
-
-    public void setLastUpdateUserName(String lastUpdateUserName) {
-        this.lastUpdateUserName = lastUpdateUserName;
-    }
 }
