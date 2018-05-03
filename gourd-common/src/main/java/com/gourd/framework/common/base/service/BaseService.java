@@ -18,15 +18,15 @@ public interface BaseService<T extends BaseEntity> {
     /**
      * 新增实体类
      * @param t
-     * @return 返回新增实体类id
+     * @return 返回新增实体类
      */
-    String add(T t);
+    T add(T t);
 
     /**
      * 更新实体类
      * @param t
      */
-    void update(T t);
+    T update(T t);
 
     /**
      * 根据ID删除实体类
@@ -38,7 +38,7 @@ public interface BaseService<T extends BaseEntity> {
      * 批量删除
      * @param ids
      */
-    void deleteByBatchIds(String ids);
+    void deleteByIds(String ids);
 
     /**
      * 根据ID返回查询结果
@@ -58,5 +58,26 @@ public interface BaseService<T extends BaseEntity> {
      * @param pageable
      * @return
      */
-    Page<T> findByPage(Pageable pageable);
+    Page<T> findAll(Pageable pageable);
+
+    /**
+     * 根据开始索引及页面数返回数据
+     * @param start
+     * @param pageSize
+     * @return
+     */
+    Page<T> findAll(int start, int pageSize);
+
+    /**
+     * 返回总数
+     * @return
+     */
+    long count();
+
+    /**
+     * 是否存在
+     * @param id
+     * @return
+     */
+    boolean exists(String id);
 }

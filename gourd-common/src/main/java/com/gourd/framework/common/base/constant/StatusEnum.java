@@ -1,4 +1,4 @@
-package com.gourd.framework.common.base.bean;
+package com.gourd.framework.common.base.constant;
 
 
 /**

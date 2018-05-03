@@ -1,4 +1,5 @@
 package com.gourd.framework.common.base.bean;
+import com.gourd.framework.common.base.constant.StatusEnum;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
